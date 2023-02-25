@@ -1,13 +1,16 @@
-import React from "react";
+// import React from "react";
+import './ExpenseItem.css'
 
 function ExpenseItem() {
     return (
-        <>
-            <h3>Expenses Item</h3>
-            <p>Food Rs 10</p>
-            <p>Petrol Rs 100</p>
-            <p>Movie Rs 200</p>
-        </>
+        <div className='expense-item'>
+            <div> March 28 2021 </div>
+            <div className='expense-item__description'>
+                <h2>Car Insurance</h2>
+                <div className='expense-item__price'>$294.67</div>
+            </div>
+
+        </div>
     )
 }
 
