@@ -31,6 +31,7 @@ function App() {
       {
         expenses.map((expense) =>
           <ExpenseItem
+            key={expense.id} //Warning: Each child in a list should have a unique "key" prop.
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
