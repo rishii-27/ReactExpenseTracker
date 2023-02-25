@@ -1,15 +1,13 @@
 // import React from "react";
 import './ExpenseItem.css'
+import ExpenseDate from './ExpenseDate';
 
 function ExpenseItem(props) {
-    // const expenseDate = new Date(2021, 2, 28);
-    // const expenseTitle = 'Car Insurance';
-    // const expenseAmount = 294.67;
-    // const expenseLocation = 'Mumbai';
 
     return (
         <div className='expense-item'>
-            <div>{props.date.toDateString()}</div>
+            {/* <div>{props.date.toLocaleString()}</div> */}
+            <ExpenseDate date={props.date} />
             <div className='expense-item__description'>
                 <div style={{ color: "red" }}>{props.location}</div>
                 <h2>{props.title}</h2>
